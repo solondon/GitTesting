@@ -1,0 +1,614 @@
+
+Lopez@W2F MINGW64 ~
+$ git --version
+git version 2.8.1.windows.1
+
+Lopez@W2F MINGW64 ~
+$ git --version
+git version 2.8.1.windows.1
+
+Lopez@W2F MINGW64 ~
+$ f:
+bash: f:: command not found
+
+Lopez@W2F MINGW64 ~
+$ f:\
+> dir
+bash: f:dir: command not found
+
+Lopez@W2F MINGW64 ~
+$ git -- version
+Unknown option: --
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+Lopez@W2F MINGW64 ~
+$ cd f:
+
+Lopez@W2F MINGW64 /f
+$ dir
+$Recycle.Bin                                ExcelDevelopmentTools               OneDriveTemp
+2007\ Office\ System\ Developer\ Resources  GdPicture.NET\ 11                   pagefile.sys
+Boot                                        GoogleDrive                         Program\ Files
+bootmgr                                     iTunes                              Program\ Files\ (x86)
+BOOTSECT.BAK                                iTunes2015                          ProgramData
+DATASET                                     MEGA                                SQL2012FileStreamData
+DEV                                         MSOCache                            System\ Volume\ Information
+DOCS                                        MyWeb_Assets                        Users
+Documents\ and\ Settings                    NinjaTrader\ Backup                 VBSourceBook6Samples
+Downloads                                   Office\ 2010\ Developer\ Resources  Windows
+DropBox                                     OLD\ VISTA\ FILES                   WindowsImageBackup
+DropBoxOLD                                  OneDrive
+
+Lopez@W2F MINGW64 /f
+$ cd F:\DEV\WEB
+bash: cd: F:DEVWEB: No such file or directory
+
+Lopez@W2F MINGW64 /f
+$ cd \dev
+
+Lopez@W2F MINGW64 /f/dev
+$ cd \web\gittesting
+bash: cd: webgittesting: No such file or directory
+
+Lopez@W2F MINGW64 /f/dev
+$ cd \web
+
+Lopez@W2F MINGW64 /f/dev/web
+$ dir
+bootstrap                       HTML        startbootstrap-agency-1.0.4           startbootstrap-stylish-portfolio-1.0.3
+Butterfly-Free-Bootstrap-Theme  JLopezCoUk  startbootstrap-freelancer-1.0.3
+GitTesting                      JuanLopez   startbootstrap-landing-page-1.0.4
+Gobala-Bootstrap                kelvin      startbootstrap-modern-business-1.0.3
+
+Lopez@W2F MINGW64 /f/dev/web
+$ cd \gittesting
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting
+$ dir
+Ch01  Ch02  Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting
+$ git init
+Initialized empty Git repository in F:/DEV/WEB/gittesting/.git/
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ dir
+Ch01  Ch02  Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ cd f:
+
+Lopez@W2F MINGW64 /f
+$ dir
+$Recycle.Bin                                ExcelDevelopmentTools               OneDriveTemp
+2007\ Office\ System\ Developer\ Resources  GdPicture.NET\ 11                   pagefile.sys
+Boot                                        GoogleDrive                         Program\ Files
+bootmgr                                     iTunes                              Program\ Files\ (x86)
+BOOTSECT.BAK                                iTunes2015                          ProgramData
+DATASET                                     MEGA                                SQL2012FileStreamData
+DEV                                         MSOCache                            System\ Volume\ Information
+DOCS                                        MyWeb_Assets                        Users
+Documents\ and\ Settings                    NinjaTrader\ Backup                 VBSourceBook6Samples
+Downloads                                   Office\ 2010\ Developer\ Resources  Windows
+DropBox                                     OLD\ VISTA\ FILES                   WindowsImageBackup
+DropBoxOLD                                  OneDrive
+
+Lopez@W2F MINGW64 /f
+$ cd /dev\web
+bash: cd: /devweb: No such file or directory
+
+Lopez@W2F MINGW64 /f
+$ cd dev/web
+
+Lopez@W2F MINGW64 /f/dev/web
+$ dir
+bootstrap                       HTML        startbootstrap-agency-1.0.4           startbootstrap-stylish-portfolio-1.0.3
+Butterfly-Free-Bootstrap-Theme  JLopezCoUk  startbootstrap-freelancer-1.0.3
+GitTesting                      JuanLopez   startbootstrap-landing-page-1.0.4
+Gobala-Bootstrap                kelvin      startbootstrap-modern-business-1.0.3
+
+Lopez@W2F MINGW64 /f/dev/web
+$ cd \gittesting
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ dir
+Ch01  Ch02  Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ ls -la
+total 7760
+drwxr-xr-x 1 Lopez 197121       0 Jul 29 14:18 ./
+drwxr-xr-x 1 Lopez 197121       0 Jul 29 13:46 ../
+drwxr-xr-x 1 Lopez 197121       0 Jul 29 14:18 .git/
+drwxr-xr-x 1 Lopez 197121       0 Jul 29 14:12 Ch01/
+drwxr-xr-x 1 Lopez 197121       0 Jul 29 14:12 Ch02/
+-rw-r--r-- 1 Lopez 197121 7935562 Jul 29 14:11 Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Ch01/
+        Ch02/
+        Ex_Files_UaR_Git_GitHub.zip
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Ex_Files_UaR_Git_GitHub.zip
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Ch01/
+        Ch02/
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add .
+warning: LF will be replaced by CRLF in Ch02/images/icon-exoticpets.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-grooming.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-health.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-nutrition.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-pestcontrol.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-vaccinations.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/wisdompetlogo.svg.
+The file will have its original line endings in your working directory.
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   Ch01/01_03/project
+        new file:   Ch01/01_04/project
+        new file:   Ch01/01_05/project
+        new file:   Ch01/01_06/project
+        new file:   Ch01/01_07/project
+        new file:   Ch02/images/carousel-exoticanimals.jpg
+        new file:   Ch02/images/carousel-fish.jpg
+        new file:   Ch02/images/carousel-lifestyle.jpg
+        new file:   Ch02/images/carousel-mission.jpg
+        new file:   Ch02/images/carousel-stateoftheart.jpg
+        new file:   Ch02/images/carousel-vaccinations.jpg
+        new file:   Ch02/images/doctor-chase.jpg
+        new file:   Ch02/images/doctor-sanders.jpg
+        new file:   Ch02/images/doctor-winthrop.jpg
+        new file:   Ch02/images/icon-exoticpets.svg
+        new file:   Ch02/images/icon-grooming.svg
+        new file:   Ch02/images/icon-health.svg
+        new file:   Ch02/images/icon-nutrition.svg
+        new file:   Ch02/images/icon-pestcontrol.svg
+        new file:   Ch02/images/icon-vaccinations.svg
+        new file:   Ch02/images/testimonial-janeh.jpg
+        new file:   Ch02/images/testimonial-johnb.jpg
+        new file:   Ch02/images/testimonial-lorraines.jpg
+        new file:   Ch02/images/testimonial-mcphersons.jpg
+        new file:   Ch02/images/wisdompetlogo.svg
+        new file:   Ex_Files_UaR_Git_GitHub.zip
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git commit -m "initial commit"
+[master (root-commit) bda85c6] initial commit
+warning: LF will be replaced by CRLF in Ch02/images/icon-exoticpets.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-grooming.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-health.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-nutrition.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-pestcontrol.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/icon-vaccinations.svg.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Ch02/images/wisdompetlogo.svg.
+The file will have its original line endings in your working directory.
+ 26 files changed, 165 insertions(+)
+ create mode 160000 Ch01/01_03/project
+ create mode 160000 Ch01/01_04/project
+ create mode 160000 Ch01/01_05/project
+ create mode 160000 Ch01/01_06/project
+ create mode 160000 Ch01/01_07/project
+ create mode 100644 Ch02/images/carousel-exoticanimals.jpg
+ create mode 100644 Ch02/images/carousel-fish.jpg
+ create mode 100644 Ch02/images/carousel-lifestyle.jpg
+ create mode 100644 Ch02/images/carousel-mission.jpg
+ create mode 100644 Ch02/images/carousel-stateoftheart.jpg
+ create mode 100644 Ch02/images/carousel-vaccinations.jpg
+ create mode 100644 Ch02/images/doctor-chase.jpg
+ create mode 100644 Ch02/images/doctor-sanders.jpg
+ create mode 100644 Ch02/images/doctor-winthrop.jpg
+ create mode 100644 Ch02/images/icon-exoticpets.svg
+ create mode 100644 Ch02/images/icon-grooming.svg
+ create mode 100644 Ch02/images/icon-health.svg
+ create mode 100644 Ch02/images/icon-nutrition.svg
+ create mode 100644 Ch02/images/icon-pestcontrol.svg
+ create mode 100644 Ch02/images/icon-vaccinations.svg
+ create mode 100644 Ch02/images/testimonial-janeh.jpg
+ create mode 100644 Ch02/images/testimonial-johnb.jpg
+ create mode 100644 Ch02/images/testimonial-lorraines.jpg
+ create mode 100644 Ch02/images/testimonial-mcphersons.jpg
+ create mode 100644 Ch02/images/wisdompetlogo.svg
+ create mode 100644 Ex_Files_UaR_Git_GitHub.zip
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git config --global user.email "jlopez@jlopez.co.uk"
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git config --global user.name "solondon"
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git log
+commit bda85c691b3708e77e0d34f92a0db473be617efd
+Author: Juan Lopez <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 14:43:16 2016 +0100
+
+    initial commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Testing.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Testing.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git commit -m "second commit"
+[master d9ac5cb] second commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Testing.txt
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Testing.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git checkout --Testing.txt
+error: unknown option `Testing.txt'
+usage: git checkout [<options>] <branch>
+   or: git checkout [<options>] [<branch>] -- <file>...
+
+    -q, --quiet           suppress progress reporting
+    -b <branch>           create and checkout a new branch
+    -B <branch>           create/reset and checkout a branch
+    -l                    create reflog for new branch
+    --detach              detach the HEAD at named commit
+    -t, --track           set upstream info for new branch
+    --orphan <new-branch>
+                          new unparented branch
+    -2, --ours            checkout our version for unmerged files
+    -3, --theirs          checkout their version for unmerged files
+    -f, --force           force checkout (throw away local modifications)
+    -m, --merge           perform a 3-way merge with the new branch
+    --overwrite-ignore    update ignored files (default)
+    --conflict <style>    conflict style (merge or diff3)
+    -p, --patch           select hunks interactively
+    --ignore-skip-worktree-bits
+                          do not limit pathspecs to sparse entries only
+    --ignore-other-worktrees
+                          do not check if another worktree is holding the given ref
+    --progress            force progress reporting
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git checkout Testing.txt
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Testing.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Testing.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git commit -m "third commit"
+[master dbe85cf] third commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git log
+commit dbe85cf87ca4daa3209bb56b8c49e129f101d5cd
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:21:54 2016 +0100
+
+    third commit
+
+commit d9ac5cbbfd9f63cd75e38e56761a39b255e85123
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:13:04 2016 +0100
+
+    second commit
+
+commit bda85c691b3708e77e0d34f92a0db473be617efd
+Author: Juan Lopez <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 14:43:16 2016 +0100
+
+    initial commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Testing - Copy.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Testing - Copy.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git reset HEAD "Testing - Copy.txt"
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Testing - Copy.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git rm "Testing - Copy.txt"
+error: the following file has changes staged in the index:
+    Testing - Copy.txt
+(use --cached to keep the file, or -f to force removal)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Testing - Copy.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git reset HEAD "Testing - Copy.txt"
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Testing - Copy.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git log
+commit dbe85cf87ca4daa3209bb56b8c49e129f101d5cd
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:21:54 2016 +0100
+
+    third commit
+
+commit d9ac5cbbfd9f63cd75e38e56761a39b255e85123
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:13:04 2016 +0100
+
+    second commit
+
+commit bda85c691b3708e77e0d34f92a0db473be617efd
+Author: Juan Lopez <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 14:43:16 2016 +0100
+
+    initial commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git checkout d9ac5cbbfd9f63cd75e38e56761a39b255e85123
+Note: checking out 'd9ac5cbbfd9f63cd75e38e56761a39b255e85123'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at d9ac5cb... second commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((d9ac5cb...))
+$ git status
+HEAD detached at d9ac5cb
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Testing.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((d9ac5cb...))
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((d9ac5cb...))
+$ git status
+HEAD detached at d9ac5cb
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Testing.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((d9ac5cb...))
+$ git commit -m "alternate head"
+[detached HEAD 9c225f1] alternate head
+ 1 file changed, 1 insertion(+)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((9c225f1...))
+$ git status
+HEAD detached from d9ac5cb
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((9c225f1...))
+$ git branch
+* (HEAD detached from d9ac5cb)
+  master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting ((9c225f1...))
+$ git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  9c225f1 alternate head
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 9c225f1
+
+Switched to branch 'master'
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git log
+commit dbe85cf87ca4daa3209bb56b8c49e129f101d5cd
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:21:54 2016 +0100
+
+    third commit
+
+commit d9ac5cbbfd9f63cd75e38e56761a39b255e85123
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:13:04 2016 +0100
+
+    second commit
+
+commit bda85c691b3708e77e0d34f92a0db473be617efd
+Author: Juan Lopez <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 14:43:16 2016 +0100
+
+    initial commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch alternateHead 9c225f1
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+  alternateHead
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$
