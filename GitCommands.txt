@@ -978,4 +978,522 @@ On branch app01
 nothing to commit, working directory clean
 
 Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git status
+On branch app01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   GitCommands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git add .
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git status
+On branch app01
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   GitCommands.txt
+
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git commit -m "amended gitcommands log"
+[app01 e0da4d5] amended gitcommands log
+ 1 file changed, 367 insertions(+)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git status
+On branch app01
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (app01)
+$ git checkout master
+Switched to branch 'master'
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+  OffInitialCommit
+  alternateHead
+  app01
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git merge app01
+Updating 6ce34b3..e0da4d5
+Fast-forward
+ GitCommands.txt | 367 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 367 insertions(+)
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git log
+commit e0da4d5524ba0caf3d65193288784fc4fc1e9feb
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Wed Aug 3 11:45:27 2016 +0100
+
+    amended gitcommands log
+
+commit 6ce34b36941de4980c2c0d448c15550fcca42c5e
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Wed Aug 3 11:18:19 2016 +0100
+
+    removed Testing.txt
+
+commit 2d5243c2ef528211a5056d9c8dabbaec50b6f7a6
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 16:39:05 2016 +0100
+
+    added command log gitbash
+
+commit dbe85cf87ca4daa3209bb56b8c49e129f101d5cd
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:21:54 2016 +0100
+
+    third commit
+
+commit d9ac5cbbfd9f63cd75e38e56761a39b255e85123
+Author: solondon <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 15:13:04 2016 +0100
+
+    second commit
+
+commit bda85c691b3708e77e0d34f92a0db473be617efd
+Author: Juan Lopez <jlopez@jlopez.co.uk>
+Date:   Fri Jul 29 14:43:16 2016 +0100
+
+    initial commit
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+  OffInitialCommit
+  alternateHead
+  app01
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch -m app01 app1
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+  OffInitialCommit
+  alternateHead
+  app1
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch -D alternateHead
+Deleted branch alternateHead (was 9c225f1).
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ git branch
+  OffInitialCommit
+  app1
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ pwd
+/f/dev/web/gittesting
+
+Lopez@W2F MINGW64 /f/dev/web/gittesting (master)
+$ cd ..
+
+Lopez@W2F MINGW64 /f/dev/web
+$ mkdir bootstrapEverlastingClassic
+
+Lopez@W2F MINGW64 /f/dev/web
+$ cd bootstrapEverlastingClassic
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic
+$ git clone https://github.com/planetoftheweb/bootstrap-everlastingclassic.git
+Cloning into 'bootstrap-everlastingclassic'...
+remote: Counting objects: 105, done.
+remote: Total 105 (delta 0), reused 0 (delta 0), pack-reused 105
+Receiving objects: 100% (105/105), 150.44 MiB | 349.00 KiB/s, done.
+Resolving deltas: 100% (16/16), done.
+Checking connectivity... done.
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic
+$ git branch
+fatal: Not a git repository (or any of the parent directories): .git
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic
+$ cd bootstrap-everlastingclassic
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic/bootstrap-everlastingclassic (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic/bootstrap-everlastingclassic (master)
+$ git branch
+* master
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic/bootstrap-everlastingclassic (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic/bootstrap-everlastingclassic (master)
+$ git checkout -b master origin/master
+fatal: A branch named 'master' already exists.
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic/bootstrap-everlastingclassic (master)
+$ cd ..
+
+Lopez@W2F MINGW64 /f/dev/web/bootstrapEverlastingClassic
+$ cd ..
+
+Lopez@W2F MINGW64 /f/dev/web
+$ mkdir responsive
+
+Lopez@W2F MINGW64 /f/dev/web
+$ cd responsive
+
+Lopez@W2F MINGW64 /f/dev/web/responsive
+$ git clone --mirror https://github.com/planetoftheweb/responsive.git .git
+Cloning into bare repository '.git'...
+remote: Counting objects: 490, done.
+remote: Total 490 (delta 0), reused 0 (delta 0), pack-reused 490
+Receiving objects: 100% (490/490), 725.82 KiB | 479.00 KiB/s, done.
+Resolving deltas: 100% (225/225), done.
+Checking connectivity... done.
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ ls
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ git config --bool core.bare false
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ git reset --hard
+HEAD is now at 4c801e0 Merge pull request #13 from ckschmieder/patch-1
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ ls
+builds/  components/  gulpfile.js  hero.png  package.json  README.md
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ git branch
+  ch01
+  ch02_01
+  ch02_02
+  ch02_03
+  ch02_04
+  ch02_05
+  ch02_06
+  ch02_07
+  ch03_01
+  ch03_02
+  ch03_03
+  ch03_04
+  ch03_05
+  ch03_06
+  ch03_07
+  ch03_08
+  ch03_09
+  ch03_10
+  ch03_11
+  ch03_12
+  ch04_01
+  ch04_02
+  ch04_03
+  ch04_04
+  ch04_05
+  ch04_06
+* master
+  net_begin
+  start
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ git log
+commit 4c801e0cccc2063b31b27988c2ebdbc209240a1c
+Merge: a6dd98a 745ce15
+Author: Ray Villalobos <ray@planetoftheweb.com>
+Date:   Sun Apr 3 22:08:42 2016 -0400
+
+    Merge pull request #13 from ckschmieder/patch-1
+
+    Add rule for sourcemap
+
+commit 745ce1506467627a4191c4767898b87b97f9fdd6
+Author: Chris Schmieder <ckschmieder@users.noreply.github.com>
+Date:   Sun Apr 3 16:42:58 2016 -0400
+
+    Add rule for sourcemap
+
+    gulp wasn't generating the sourcemap ('/style.css.map'), but adding in:
+
+    sourcemap: true,
+
+    has fixed this for me.
+
+commit a6dd98aad49b694edc0831f03b3156249958ad76
+Author: Ray Villalobos <ray@planetoftheweb.com>
+Date:   Thu May 7 17:32:19 2015 -0400
+
+    added hero graphic
+
+commit c530f0d46bb8014e4fb73396f329c88c24bb3f9f
+Author: Ray Villalobos <ray@planetoftheweb.com>
+Date:   Wed Apr 29 02:28:05 2015 -0400
+
+    minor changes
+
+commit 1f6647757bf8661af73179d0d799c101cfe51102
+Author: Ray Villalobos <ray@planetoftheweb.com>
+Date:   Wed Apr 29 01:57:13 2015 -0400
+
+    updated scripts
+
+commit 798dc978acf947dcdcf61b0ab820cfd55456b2cf
+Author: Ray Villalobos <ray@planetoftheweb.com>
+Date:   Tue Apr 28 01:17:27 2015 -0400
+
+    small updates
+
+commit db646e46ec1b774f0933ec7ad89c1ae13c6502b6
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Thu Aug 14 01:40:29 2014 -0400
+
+    modified script to push to production
+
+commit 6d52f84afd132d183b80f82c62b1c46b170064a8
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Thu Aug 14 01:32:45 2014 -0400
+
+    added conditional touch detection
+
+commit 5f5c4462476ba3131f3ea37826caeac249db177d
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Thu Aug 14 01:15:17 2014 -0400
+
+    added room scrolling
+
+commit c569f3077556b837eb0417882a34e2d77ef7fe74
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 23:51:59 2014 -0400
+
+    highlight nav on scroll
+
+commit ff147b38c327b37abada871afad797c64e323c47
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 23:32:10 2014 -0400
+
+    added pinning and scrolling
+
+commit 452069ccb81ce44ee00eddc4c382b720136953cb
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 21:28:05 2014 -0400
+
+    Creating Tween Animation
+
+commit ed93cbe1608ceb9d6c212d864b435e9d44bff0c7
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 20:57:54 2014 -0400
+
+    finished adding footer
+
+commit ff5504eff6e7d44db1aa021330b6eac3a1149f01
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 19:02:01 2014 -0400
+
+    added layout for attractions
+
+commit c57749360a6e87bfc5c24fb917260876c3a2aed4
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 18:47:57 2014 -0400
+
+    Created split layout for events
+
+commit c9de71884514ad19657f6840861dacb86e2c4e51
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 17:45:13 2014 -0400
+
+    modified mixins
+
+commit 14d3f710c439bfda44f2c86ca3fd49549f846aec
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 13:53:42 2014 -0400
+
+    ch03_08
+
+commit 1b5445defb22dd4ce1f34eba46b28df878210bc9
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 02:05:52 2014 -0400
+
+    03_07
+
+commit a34c13c7ebb9cb09df8280a85042e6782148def3
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 01:23:11 2014 -0400
+
+    ch03_06PU
+
+commit 9826f719ed166b239778ed1b4d5899b699ec7a41
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 01:04:23 2014 -0400
+
+    ch03_06
+
+commit 85dfb477e6e9c0ec18877f4837c73ae09a9f06f0
+
+    highlight nav on scroll
+
+commit ff147b38c327b37abada871afad797c64e323c47
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 23:32:10 2014 -0400
+
+    added pinning and scrolling
+
+commit 452069ccb81ce44ee00eddc4c382b720136953cb
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 21:28:05 2014 -0400
+
+    Creating Tween Animation
+
+commit ed93cbe1608ceb9d6c212d864b435e9d44bff0c7
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 20:57:54 2014 -0400
+
+    finished adding footer
+
+commit ff5504eff6e7d44db1aa021330b6eac3a1149f01
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 19:02:01 2014 -0400
+
+    added layout for attractions
+
+commit c57749360a6e87bfc5c24fb917260876c3a2aed4
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 18:47:57 2014 -0400
+
+    Created split layout for events
+
+commit c9de71884514ad19657f6840861dacb86e2c4e51
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 17:45:13 2014 -0400
+
+    modified mixins
+
+commit 14d3f710c439bfda44f2c86ca3fd49549f846aec
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 13:53:42 2014 -0400
+
+    ch03_08
+
+commit 1b5445defb22dd4ce1f34eba46b28df878210bc9
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 02:05:52 2014 -0400
+
+    03_07
+
+commit a34c13c7ebb9cb09df8280a85042e6782148def3
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 01:23:11 2014 -0400
+
+    ch03_06PU
+
+commit 9826f719ed166b239778ed1b4d5899b699ec7a41
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 01:04:23 2014 -0400
+
+    ch03_06
+
+commit 85dfb477e6e9c0ec18877f4837c73ae09a9f06f0
+:Stopped
+
+Lopez@W2F MINGW64 /f/dev/web/responsive (master)
+$ cd ..
+
+Lopez@W2F MINGW64 /f/dev/web
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Wed Aug 13 00:01:50 2014 -0400
+
+    ch03_05
+
+commit 2c48ac790261dcff82bc65451c704dbd44758b7b
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Tue Aug 12 23:08:35 2014 -0400
+
+    ch03_04
+
+commit 36ad883bc96022bd65a098f3cba23a24423ec2f9
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Tue Aug 12 20:57:16 2014 -0400
+
+    ch03_03
+
+commit 567d94a94c7739a9d5a2d0f7d7d172f3e94c7bb9
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Tue Aug 12 19:26:09 2014 -0400
+
+    ch03_02
+
+commit e356720f3aef5e7d9595a3c69b86812ff5fad3fe
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Tue Aug 12 17:51:56 2014 -0400
+
+    ch03_01
+
+commit 7645ad9bd4633a2380761e5372d27b5438872f4e
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 22:52:23 2014 -0400
+
+    ch02_07
+
+commit 3806c8e2cc1787a9e4877984cfc5271d40e03f74
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 21:56:02 2014 -0400
+
+    ch02_06
+
+commit c8ad77a21cbe2af4ee87c0ebd304e7249f652a9c
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 20:29:20 2014 -0400
+
+    ch02_05
+
+commit 0646a048d6c3c354d886ef2f1ab819aaffd6c4d3
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 19:13:00 2014 -0400
+
+    ch02_04
+
+commit 9ea1a4d1358c5de3228537e4fda97963a083ddae
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 18:57:40 2014 -0400
+
+    ch02_03
+
+commit b4b39b3bbb0adc68729dbb96699ee1b6a1cea0a5
+Author: Ray Villalobos <ray@lynda.com>
+Date:   Mon Aug 11 11:32:14 2014 -0400
+
+    ch02_02
+bash: c: command not found
+
+Lopez@W2F MINGW64 /f/dev/web
+$ cd GitTesting
+
+Lopez@W2F MINGW64 /f/dev/web/GitTesting (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+Lopez@W2F MINGW64 /f/dev/web/GitTesting (master)
 $
+
